@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ID Registration Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Student ID Registration Form</h1>
+        </header>
+
+        <form id="student-id-registration-form">
+            <div class="form-group">
+                <label id="lastName-label" for="name">Student Name</label>
+                <input type="text" name="lastName" id="lastName" class="form-control name" placeholder="Last Name" required>
+                <label id="firstName-label" for="name" style="display: inline-block;"></label>
+                <input type="text" name="firstName" id="fistName" class="form-control name" placeholder="First Name" required>
+                <label id="middleName-label" for="name" style="display: inline-block;"></label>
+                <input type="text" name="middleName" id="middleName" class="form-control name" placeholder="Middle Name" required>
+            </div>
+
+            <div class="form-group">
+                <label id="birthdate-label" for="birthdate">Date of Birth</label>
+                <input type="date" name="birthdate" id="birthdate" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label id="address-label" for="address">Address</label>
+                <input type="text" name="address" id="address" placeholder="Enter your address" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label id="program-label" for="program">Program</label>
+                <input type="text" name="program" id="program" placeholder="Enter your Program" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label id="studentId-label" for="studentId">Student ID Number</label>
+                <input type="number" name="studentId" id="studentId" placeholder="ex. 000000000" class="form-control" min="9" max="9" required>
+            </div>
+
+            <div class="form-group">
+                <label id="contactPerson-label" for="contactPerson">Parent's or Guardian's Name (To contact in case of Emergency)</label>
+                <input type="text" name="contactPerson" id="contactPerson" placeholder="Parent's or Guardian's name" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label id="contactPersonNumber-label" for="contactPersonNumber">Parent's or Guardian's Contact Number</label>
+                <input type="text" name="contactPersonNumber" id="contactPersonNumber" placeholder="Parent's or Guardian's Contact Number" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label id="studentSignature-label" for="studentSignature">Student's Signature</label>
+                <input type="file" name="studentSignature" id="studentSignature" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
