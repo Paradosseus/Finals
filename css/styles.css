@@ -12,6 +12,7 @@ body {
 }
 .container {
     width: 100%;
+    height: 80rem;
     background-color: #1a4c17cf;
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,6 +38,7 @@ header {
 
 #student-id-registration-form {
     width: 50rem;
+    height: 70rem;
     background: linear-gradient(90deg, rgba(39,40,40,0.85) 50%, rgba(39,40,40,0.85) 50%); 
     padding: 2.5rem;
     border-radius: 0.25rem;
@@ -46,7 +48,7 @@ header {
     margin: 1.2rem 0;
     padding: 0.25rem;
 }
-.form-control {
+.form-control,select {
     display: block;
     width: 100%;
     height: 3rem;
@@ -59,7 +61,14 @@ input.form-control.name {
     display: inline-block;
     width: 32%;
 }
-
+.input-textarea {
+    width: 100%;
+    height: 10rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    padding: 0.6rem;
+    background-color: #fff;
+}
 
 label {
     display: block;

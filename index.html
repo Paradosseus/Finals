@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student ID Registration Form</title>
     <link rel="stylesheet" href="css/styles.css">
+    
 </head>
-<body>
+<body class="min-h-screen">
     <div class="container">
         <header class="header">
             <h1 id="title">Student ID Registration Form</h1>
@@ -27,15 +28,33 @@
                 <label id="birthdate-label" for="birthdate">Date of Birth</label>
                 <input type="date" name="birthdate" id="birthdate" class="form-control" required>
             </div>
-
+            
             <div class="form-group">
-                <label id="address-label" for="address">Address</label>
-                <input type="text" name="address" id="address" placeholder="Enter your address" class="form-control" required>
+                <label id="college-label" for="college" >College</label>
+                <select name="college" id="college" onchange="programDropdown(this.options[this.selectedIndex].value)">
+                    <option>Select a college</option>
+                    <option>College of Criminal Justice Education</option>
+                    <option>College of Information Technology and Computer Science</option>
+                    <option>College of Teacher Education</option>
+                    <option>College of Accountancy</option>
+                    <option>College of Arts and Sciences</option>
+                    <option>College of Business Administration</option>
+                    <option>College of Engineering and Architecture</option>
+                    <option>College of Hospitality and Management</option>
+                    <option>College of Nursing</option>
+                    <option>College of Law</option>
+                </select>
             </div>
 
             <div class="form-group">
-                <label id="program-label" for="program">Program</label>
-                <input type="text" name="program" id="program" placeholder="Enter your Program" class="form-control" required>
+                <select name="program" id="program">
+                     <option>Select a program</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Address</p>
+                <textarea name="address" id="address" class="input-textarea" placeholder="Enter your Address" rows="5" column="50" style="width: 709px; height: 67px;"></textarea>
             </div>
 
             <div class="form-group">
@@ -63,5 +82,6 @@
             </div>
         </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
